@@ -1,0 +1,23 @@
+2026-02-20 07:06:06,123 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:06:06,124 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:06:06,124 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:06:06,124 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:06:06,124 - app - INFO - Total products processed: 12
+2026-02-20 07:06:06,124 - app - INFO - Page 1: Showing 10 products out of 12
+2026-02-20 07:12:33,369 - app - INFO - Products route called. DB status: True
+2026-02-20 07:12:33,371 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:12:33,557 - app - INFO - Firestore returned 12 documents
+2026-02-20 07:12:33,557 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:12:33,557 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:12:33,558 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)
+2026-02-20 07:12:33,558 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:12:33,558 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:12:33,558 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:12:33,558 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:12:33,559 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:12:33,559 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:12:33,559 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:12:33,559 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:12:33,559 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:12:33,559 - app - INFO - Total products processed: 12
+2026-02-20 07:12:33,560 - app - INFO - Page 1: Showing 10 products out of 12

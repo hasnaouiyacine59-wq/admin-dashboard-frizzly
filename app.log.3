@@ -1,0 +1,129 @@
+2026-02-20 07:00:56,250 - app - ERROR - Exception on /products [GET]
+Traceback (most recent call last):
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 212, in decorated_view
+    return fn(*args, **kwargs)
+  File "app.py", line 622, in products
+    all_products.sort(key=lambda x: (x.get('createdAt') or '', x.get('name', '')), reverse=True)
+TypeError: '<' not supported between instances of 'DatetimeWithNanoseconds' and 'str'
+2026-02-20 07:00:59,565 - app - INFO - Products route called. DB status: True
+2026-02-20 07:00:59,566 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:00:59,721 - app - INFO - Firestore returned 14 documents
+2026-02-20 07:00:59,722 - app - INFO - Product found: lol2 (ID: 7M04GqjOXP9HWB0gdAmU)
+2026-02-20 07:00:59,722 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:00:59,723 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:00:59,723 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)
+2026-02-20 07:00:59,723 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:00:59,723 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:00:59,724 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:00:59,724 - app - INFO - Product found: tott (ID: QYKdieEXbIRj7QlihU5Y)
+2026-02-20 07:00:59,724 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:00:59,725 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:00:59,725 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:00:59,725 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:00:59,726 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:00:59,726 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:00:59,726 - app - INFO - Total products processed: 14
+2026-02-20 07:00:59,727 - app - ERROR - Exception on /products [GET]
+Traceback (most recent call last):
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 212, in decorated_view
+    return fn(*args, **kwargs)
+  File "app.py", line 622, in products
+    all_products.sort(key=lambda x: (x.get('createdAt') or '', x.get('name', '')), reverse=True)
+TypeError: '<' not supported between instances of 'DatetimeWithNanoseconds' and 'str'
+2026-02-20 07:01:00,597 - app - INFO - Products route called. DB status: True
+2026-02-20 07:01:00,598 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:01:00,737 - app - INFO - Firestore returned 14 documents
+2026-02-20 07:01:00,738 - app - INFO - Product found: lol2 (ID: 7M04GqjOXP9HWB0gdAmU)
+2026-02-20 07:01:00,738 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:01:00,738 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:01:00,738 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)
+2026-02-20 07:01:00,739 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:01:00,739 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:01:00,739 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:01:00,739 - app - INFO - Product found: tott (ID: QYKdieEXbIRj7QlihU5Y)
+2026-02-20 07:01:00,739 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:01:00,739 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:01:00,740 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:01:00,740 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:01:00,740 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:01:00,740 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:01:00,740 - app - INFO - Total products processed: 14
+2026-02-20 07:01:00,740 - app - ERROR - Exception on /products [GET]
+Traceback (most recent call last):
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 212, in decorated_view
+    return fn(*args, **kwargs)
+  File "app.py", line 622, in products
+    all_products.sort(key=lambda x: (x.get('createdAt') or '', x.get('name', '')), reverse=True)
+TypeError: '<' not supported between instances of 'DatetimeWithNanoseconds' and 'str'
+2026-02-20 07:01:01,493 - app - INFO - Products route called. DB status: True
+2026-02-20 07:01:01,495 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:01:01,675 - app - INFO - Firestore returned 14 documents
+2026-02-20 07:01:01,675 - app - INFO - Product found: lol2 (ID: 7M04GqjOXP9HWB0gdAmU)
+2026-02-20 07:01:01,676 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:01:01,676 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:01:01,676 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)
+2026-02-20 07:01:01,676 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:01:01,676 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:01:01,677 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:01:01,677 - app - INFO - Product found: tott (ID: QYKdieEXbIRj7QlihU5Y)
+2026-02-20 07:01:01,677 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:01:01,677 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:01:01,678 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:01:01,678 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:01:01,678 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:01:01,679 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:01:01,679 - app - INFO - Total products processed: 14
+2026-02-20 07:01:01,679 - app - ERROR - Exception on /products [GET]
+Traceback (most recent call last):
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 212, in decorated_view
+    return fn(*args, **kwargs)
+  File "app.py", line 622, in products
+    all_products.sort(key=lambda x: (x.get('createdAt') or '', x.get('name', '')), reverse=True)
+TypeError: '<' not supported between instances of 'DatetimeWithNanoseconds' and 'str'
+2026-02-20 07:02:04,133 - app - INFO - Products route called. DB status: True
+2026-02-20 07:02:04,134 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:02:04,346 - app - INFO - Firestore returned 14 documents
+2026-02-20 07:02:04,346 - app - INFO - Product found: lol2 (ID: 7M04GqjOXP9HWB0gdAmU)
+2026-02-20 07:02:04,347 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:02:04,347 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:02:04,347 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)

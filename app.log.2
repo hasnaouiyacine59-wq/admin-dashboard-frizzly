@@ -1,0 +1,124 @@
+2026-02-20 07:02:04,347 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:02:04,348 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:02:04,348 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:02:04,348 - app - INFO - Product found: tott (ID: QYKdieEXbIRj7QlihU5Y)
+2026-02-20 07:02:04,348 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:02:04,349 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:02:04,349 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:02:04,349 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:02:04,349 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:02:04,349 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:02:04,349 - app - INFO - Total products processed: 14
+2026-02-20 07:02:04,350 - app - ERROR - Exception on /products [GET]
+Traceback (most recent call last):
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 212, in decorated_view
+    return fn(*args, **kwargs)
+  File "app.py", line 622, in products
+    def sort_key(product):
+TypeError: '<' not supported between instances of 'DatetimeWithNanoseconds' and 'str'
+2026-02-20 07:03:12,155 - app - INFO - Products route called. DB status: True
+2026-02-20 07:03:12,155 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:03:12,343 - app - INFO - Firestore returned 14 documents
+2026-02-20 07:03:12,343 - app - INFO - Product found: lol2 (ID: 7M04GqjOXP9HWB0gdAmU)
+2026-02-20 07:03:12,343 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:03:12,343 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:03:12,343 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)
+2026-02-20 07:03:12,344 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:03:12,344 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:03:12,344 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:03:12,344 - app - INFO - Product found: tott (ID: QYKdieEXbIRj7QlihU5Y)
+2026-02-20 07:03:12,344 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:03:12,344 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:03:12,345 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:03:12,345 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:03:12,345 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:03:12,345 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:03:12,345 - app - INFO - Total products processed: 14
+2026-02-20 07:03:12,346 - app - ERROR - Exception on /products [GET]
+Traceback (most recent call last):
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 1455, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 869, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 867, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask/app.py", line 852, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/oo33/.local/lib/python3.8/site-packages/flask_login/utils.py", line 290, in decorated_view
+    return current_app.ensure_sync(func)(*args, **kwargs)
+  File "app.py", line 212, in decorated_view
+    return fn(*args, **kwargs)
+  File "app.py", line 622, in products
+    def sort_key(product):
+TypeError: '<' not supported between instances of 'DatetimeWithNanoseconds' and 'str'
+2026-02-20 07:03:50,124 - app - INFO - Using local serviceAccountKey.json at: serviceAccountKey.json
+2026-02-20 07:03:50,215 - app - INFO - Firebase initialized successfully
+2026-02-20 07:03:53,517 - app - INFO - Products route called. DB status: True
+2026-02-20 07:03:53,519 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:03:53,709 - app - INFO - Firestore returned 14 documents
+2026-02-20 07:03:53,709 - app - INFO - Product found: lol2 (ID: 7M04GqjOXP9HWB0gdAmU)
+2026-02-20 07:03:53,709 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:03:53,710 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:03:53,710 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)
+2026-02-20 07:03:53,710 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:03:53,710 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:03:53,710 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:03:53,711 - app - INFO - Product found: tott (ID: QYKdieEXbIRj7QlihU5Y)
+2026-02-20 07:03:53,711 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:03:53,711 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:03:53,711 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:03:53,711 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:03:53,712 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:03:53,712 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:03:53,712 - app - INFO - Total products processed: 14
+2026-02-20 07:03:53,712 - app - INFO - Page 1: Showing 10 products out of 14
+2026-02-20 07:04:04,784 - app - INFO - Products route called. DB status: True
+2026-02-20 07:04:04,785 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:04:07,001 - app - INFO - Firestore returned 14 documents
+2026-02-20 07:04:07,002 - app - INFO - Product found: lol2 (ID: 7M04GqjOXP9HWB0gdAmU)
+2026-02-20 07:04:07,002 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:04:07,003 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:04:07,003 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)
+2026-02-20 07:04:07,003 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:04:07,004 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:04:07,004 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:04:07,004 - app - INFO - Product found: tott (ID: QYKdieEXbIRj7QlihU5Y)
+2026-02-20 07:04:07,005 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:04:07,005 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:04:07,005 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:04:07,006 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:04:07,006 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:04:07,006 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:04:07,006 - app - INFO - Total products processed: 14
+2026-02-20 07:04:07,007 - app - INFO - Page 2: Showing 4 products out of 14
+2026-02-20 07:04:13,791 - app - INFO - Refreshing category cache.
+2026-02-20 07:04:34,193 - app - INFO - Product 'Banana' (ID: Y7dnwhAhqNWTZL4NijM3) updated by JoVbdNOrz93nWBP5iuIw
+2026-02-20 07:04:34,381 - app - INFO - Products route called. DB status: True
+2026-02-20 07:04:34,383 - app - INFO - Attempting to fetch products from Firestore...
+2026-02-20 07:04:34,520 - app - INFO - Firestore returned 14 documents
+2026-02-20 07:04:34,520 - app - INFO - Product found: lol2 (ID: 7M04GqjOXP9HWB0gdAmU)
+2026-02-20 07:04:34,521 - app - INFO - Product found: Strawberry (ID: 9ik6JmsiX4D3XuO9EDLu)
+2026-02-20 07:04:34,521 - app - INFO - Product found: Orange (ID: IsV9HIxg4EvnxdioJgIG)
+2026-02-20 07:04:34,521 - app - INFO - Product found: Organic Spinach (ID: KBmVGVENUQ2qmoTgpntq)
+2026-02-20 07:04:34,521 - app - INFO - Product found: Organic Apple (ID: LE1JOUXbNwOtJ4KyYQWd)
+2026-02-20 07:04:34,522 - app - INFO - Product found: Broccoli (ID: LqNL2RVcmsVTeV6mKF3m)
+2026-02-20 07:04:34,522 - app - INFO - Product found: Bell Pepper (ID: PpFp8qtt54X6elek4lFq)
+2026-02-20 07:04:34,522 - app - INFO - Product found: tott (ID: QYKdieEXbIRj7QlihU5Y)
+2026-02-20 07:04:34,522 - app - INFO - Product found: Cucumber (ID: Wfwuh4yICcIfo20pmgqv)
+2026-02-20 07:04:34,522 - app - INFO - Product found: Banana (ID: Y7dnwhAhqNWTZL4NijM3)
+2026-02-20 07:04:34,523 - app - INFO - Product found: Lettuce (ID: Yf39zX07VtqeJMWxEMIz)
+2026-02-20 07:04:34,523 - app - INFO - Product found: Tomato (ID: caInsYVIZJBRyc2INRTb)
+2026-02-20 07:04:34,523 - app - INFO - Product found: Fresh Apple (ID: fK4VzCqLGSuJG1Sb8Xzv)
+2026-02-20 07:04:34,523 - app - INFO - Product found: Carrot (ID: s57D5AIlc97da3l31fRJ)
+2026-02-20 07:04:34,524 - app - INFO - Total products processed: 14
+2026-02-20 07:04:34,524 - app - INFO - Page 1: Showing 10 products out of 14
